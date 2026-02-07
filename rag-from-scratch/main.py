@@ -6,7 +6,8 @@ from retriever import Retriever
 from cleaner import clean_text
 import PyPDF2
 from sklearn.metrics.pairwise import cosine_similarity
-
+#You can load any pdf you want by adding the file address for reference. I have provided a pdf 
+#This model works on text only pdf and can crash on poorly scaned pdf files or image files
 text = Loader("nazi.pdf")
 text_ = text.load()
 chunk = Chunker()
@@ -34,3 +35,4 @@ print("\nAnswer based on the document:\n")
 for i, chunk in enumerate(answer, 1):
     cleaned = clean_text(chunk)
     print(f"{i}. {cleaned}\n")
+
