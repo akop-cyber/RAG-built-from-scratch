@@ -1,4 +1,4 @@
-📘 RAG from Scratch (PDF Question Answering)
+📘 RAG from Scratch (PDF Question Answering) VERSION 1
 
 This project is a Retrieval-Augmented Generation (RAG) system built completely from scratch, without using LangChain, LlamaIndex, or any external RAG framework.
 
